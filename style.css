@@ -1,0 +1,591 @@
+* {
+  /* глобальные переменные */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  /* отступ всех элементов от левого края окна, процент выбран на глаз, ради позиционирования страницы по центру монитора */
+  margin-left: 17%;
+}
+.main{
+  /* ширина основного блока */
+  width: 1280px;
+}
+.product {
+  /* работа с блоком о продукте, выставление размеров блока, цвета 
+  и различные отступы */
+  width: 1180px;
+  height: 295px;
+  background-color: #445161;
+  margin-left: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 28px;
+  display: inline-flex;
+}
+ /* В блоке все элементы были разделены на классы
+ казалось что будет легче редактировать расположение заголовков описаний
+ и изображение */
+.product-txt{
+  width: 458px;
+}
+/* название продукта */
+.Product-name{
+  /* width: 367px; */
+  height: 44px;
+  margin-top: 40px;
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+  font-family: Arial;
+  font-size: 58px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+/* краткое описание */
+.Product-Pluses{
+  width: 422px;
+  height: 127px;
+  margin-left: 36px;
+  margin-top: 51px;
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+/* изображение продукта */
+.product-img{
+  width: 469px;
+  height: 214px;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-left: 253px;
+}
+/* секция с подробным описанием */
+.about{
+  width: 1280px;
+  height: 340px;
+  background-color: #fff;
+  display: inline-flex;
+}
+/* контейнер для отступов */
+.about-txt{
+  margin-left: 50px;
+  width: 740px;
+}
+/* заголовок */
+.about-title{
+  padding-top: 40px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #445161;
+}
+/* описание */
+.about-lorem{
+  width: 653px;
+  margin-top: 30px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+}
+/* блок видео презентация */
+.about-img{
+  width: 430px;
+  height: 245px;
+  background-color: #445161;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+/* блок преимуществ */
+.pluses {
+  width: 1280px;
+  height: 422px;
+  background-color: #ebebeb;
+}
+.dignity__container {
+  background-color: #f5f5f5;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 422px;
+}
+/* заголовки */
+.dignity__title{
+  width: 351px;
+  height: 28px;
+  margin-left: 464px;
+  margin-top: 0px;
+  padding-top: 51px;
+  padding-bottom: 35px;
+  font-family: Arial;
+  font-size: 29px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #445161;
+}
+.dignity__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dignity__item {
+  max-width: 526px;
+  padding-left: 50px;
+  background-image: url(icon_plus.svg);
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: left top;
+}
+/* класс введён для того, чтобы поделить преимущества на два столбца */
+.plus__item {
+  max-width: 526px;
+  padding-left: 50px;
+  background-image: url(icon_plus.svg);
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: left top;
+}
+/* блок с фотографиями и подробным описанием */
+.screen{
+  width: 1280px;
+  height: 487px;
+  background-color: #fff;
+}
+/* класс для отступов */
+.screenshots{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* заголовок */
+.screenshot-title{
+  width: 138px;
+  height: 28px;
+  margin-left: 511px;
+  margin-top: 0px;
+  padding-top: 51px;
+  padding-bottom: 35px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #445161;
+}
+.screenshot-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+/* стиль фото и соответствующего описания  */
+.screenshots__item{
+  max-width: 575px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 15px;
+}
+.screenshot-image{
+  grid-column: 1 / 2;
+  background-color: #445161;
+}
+/* подпись */
+.screenshot-subtitle{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #445161;
+}
+/* описание */
+.screenshot-text {
+  max-width: 360px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: flex-end;
+  line-height: 22px;
+}
+/* стили блока с отзывами */
+.review{
+  width: 1280px;
+  height: 424px;
+  background-color: #f5f5f5;
+}
+/* заголовок блока */
+.review-title{
+  width: 351px;
+  height: 28px;
+  margin-left: 585px;
+  margin-top: 0px;
+  padding-top: 51px;
+  padding-bottom: 35px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #445161;
+}
+/* фон блока */
+.review-content{
+  background-color: #f5f5f5;
+}
+/* общий контейнер */
+.reviews__list{
+  display: inline-block;
+  gap: 30px;
+}
+/* столбец обзоров */
+.review-item{
+  display: inline-flex;
+  gap: 30px;
+  width: 575px;
+  padding-bottom: 24px;
+  padding-left: 50px;
+}
+/* класс для выстраивания обзоров в два столбца */
+.review-item-1{
+  display: inline-flex;
+  gap: 30px;
+  width: 575px;
+  padding-left: 32px;
+}
+/* Фон обзора продукта */
+.review-wrapper{
+  width: 483px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ebebeb;
+  position: relative;
+}
+/* декоративный элемент для стилизации фона обзора под "облако" диалога */
+.review-wrapper::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: -8px;
+  background-color: #ebebeb;
+  transform: rotate(45deg);
+}
+/* аватар обзорщика/комментатора */
+.review-image{
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-color: #445161;
+  border-radius: 50%;
+}
+/* обзор */
+.review-text{
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18px;
+}
+/* подпись автора обзора */
+.review-author{
+  font-size: 14px;
+  line-height: 18px;
+  color: #989898;
+}
+/* стили блока с тарифами */
+.buy{
+  width: 1280px;
+  height: 656px;
+  background-color: #fff;
+}
+.buy-title{
+  width: 127px;
+  height: 38px;
+  font-family: Arial;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #445161;
+}
+.buy-content{
+  display: inline-flex;
+}
+/* ниже стили блока тарифа стандарт
+цены, описания и кнопки */
+.standart{
+  width: 300px;
+  height: 306px;
+  background-color: #445161;
+  margin: 262px 0 0 145px;
+  border-radius: 5px;
+}
+.s-price{
+  width: 296px;
+  height: 71px;
+  background-color: #fff;
+  margin: 17px 0 0 2px;
+}
+.s-about{
+  width: 242px;
+  height: 86px;
+  margin-top: 19px;
+  margin-left: 28px;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.45;
+  text-align: left;
+  color: #fff;
+}
+.s-btn{
+  width: 260px;
+  height: 40px;
+  margin-top: 19px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+/* ниже стили блока тарифа премиум
+цены, описания и кнопки */
+.premium{
+  width: 300px;
+  height: 404px;
+  background-color: #445161;
+  margin: 164px 0 0 45px;
+  border-radius: 5px;
+}
+.p-price{
+  width: 296px;
+  height: 71px;
+  background-color: #fff;
+  margin: 17px 0 0 2px;
+}
+.p-about{
+  width: 242px;
+  height: 182px;
+  margin-top: 19px;
+  margin-left: 28px;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.65;
+  text-align: left;
+  color: #fff;
+}
+/* ниже стили блока тарифа люкс
+цены, описания и кнопки */
+.lux{
+  width: 300px;
+  height: 499px;
+  background-color: #445161;
+  margin: 69px 0 0 45px;
+  border-radius: 5px;
+}
+.l-price{
+  width: 296px;
+  height: 71px;
+  background-color: #fff;
+  margin: 17px 0 0 2px;
+}
+.l-about{
+  width: 250px;
+  height: 278px;
+  margin-top: 19px;
+  margin-left: 28px;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.71;
+  text-align: left;
+  color: #fff;
+}
+/* цвет и размеры footer'а */
+.footer{
+  width: 1280px;
+  height: 509px;
+  background-color: #445162;
+}
+/* Заголовок */
+.contact-title{
+  width: 117px;
+  height: 22px;
+  padding: 53px 0 0 582px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+/* Поля для ввода */
+.inputs{
+  padding-left: 249px;
+  padding-top: 31px;
+  width: 500px;
+}
+/* Поле с именем */
+.contact-name{
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+}
+/* контактные данные условного покупателя */
+.contact-mail{
+  width: 500px;
+  height: 40px;
+  margin-top: 21px;
+  margin-bottom: 22px;
+  border-radius: 5px;
+}
+/* сообсщение "покупателя" для администрации сайта */
+.contact-msg{
+  width: 500px;
+  height: 170px;
+  border-radius: 5px;
+}
+/* стили кнопки отправить */
+.send{
+  width: 140px;
+  height: 40px;
+  margin: 21px 0 0 180px;
+  padding-left: 48px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #445162;
+  border-radius: 5px;
+}
+.contacts{
+  width: 400px;
+  padding: 31px 0 0 45px;
+}
+/* Ниже идут стили для "иконок" способов связи
+сами иконки не нашёл, было принято решение оставить теги изображений
+ круглой формы и примерного размера чтобы хоть как-то походило на макет */
+.contact-icons{
+  width: 26px;
+}
+.skype{
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.twitter{
+  border-radius: 50%;
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+}
+.icq{
+  width: 26px;
+  height: 26px;
+  margin-top: 18px;
+  margin-bottom: 19px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.fb{
+  border-radius: 50%;
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  margin: 0 0 0 7px;
+}
+.mail{
+  width: 26px;
+  height: 26px;
+  margin-bottom: 19px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.IN{
+  border-radius: 50%;
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  margin: 0 7px 0 7px;
+}
+.tel{
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.google{
+  border-radius: 50%;
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  margin: 0 7px 0 0;
+}
+.YT{
+  border-radius: 50%;
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+}
+/* copyright тут всё просто */
+.copy{
+  width: 1280px;
+  height: 26px;
+  background-color: #f5f5f5;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #445162;
+}
